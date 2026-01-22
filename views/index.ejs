@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title><%= title %></title>
+        <link rel="stylesheet" href="/styles.css">
+    </head>
+    <body>
+        <ul>
+            <% messages.forEach((message) => { %>
+                <li>User: <%= message.user %></li>
+                <li>Message: <%= message.text %></li>
+                <li>Date: <%= message.added %></li>
+                <li>Id: <%= message.id %></li>
+                <button onclick="window.location.href='/authors/<%= message.id %>'">Open the message</button>
+            <% })  %>
+        </ul>
+        <button onclick="window.location.href='/new';">Submit A Form</button>
+    </body>
+</html>
