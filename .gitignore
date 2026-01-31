@@ -1,3 +1,4 @@
 .env
-.dotenv.env
-node_modules
+dotenv.env
+*.env
+node_modules/
